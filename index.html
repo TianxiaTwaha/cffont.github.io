@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CF Fonts 字体库</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, sans-serif;
+        }
+        body {
+            background: #0f1117;
+            color: #e6edf3;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+            color: #58a6ff;
+        }
+        .desc {
+            color: #8b949e;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        .font-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            padding: 26px;
+            margin-bottom: 24px;
+        }
+        .font-name {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .preview-text {
+            font-size: 2.2rem;
+            line-height: 1.8;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+        .sample-input {
+            width: 100%;
+            padding:14px;
+            background:#0d1117;
+            border:1px solid #30363d;
+            border-radius:8px;
+            color:#fff;
+            font-size:1.3rem;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            display:inline-block;
+            padding:12px 28px;
+            background:#238636;
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+            border-radius:8px;
+            transition: 0.2s;
+        }
+        .download-btn:hover {
+            background:#2ea043;
+        }
+        footer {
+            text-align:center;
+            margin-top:50px;
+            color:#8b949e;
+            font-size:0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CF Fonts 字体库</h1>
+            <p class="desc">FontForge 自制字体集｜中文 / 数字 / 英文，上传即用</p>
+        </header>
+
+        <!-- ========== 中文字体 ========== -->
+        <div class="font-card">
+            <div class="font-name">cfchinesefont（中文字体）</div>
+            <div class="preview-text" style="font-family:'cfchinesefont'">天地玄黄，宇宙洪荒 0123 ABC</div>
+            <input class="sample-input" style="font-family:'cfchinesefont'" placeholder="输入文字预览中文">
+            <a class="download-btn" href="./cfchinesefont.ttf" download="cfchinesefont.ttf">⬇️ 下载 cfchinesefont.ttf</a>
+        </div>
+
+        <!-- ========== 数字字体（后续上传 cfnumberfont.ttf 自动生效） ========== -->
+        <div class="font-card">
+            <div class="font-name">cfnumberfont（数字字体，待上传）</div>
+            <div class="preview-text" style="font-family:'cfnumberfont'">0123456789 . + -</div>
+            <input class="sample-input" style="font-family:'cfnumberfont'" placeholder="上传 cfnumberfont.ttf 后即可预览数字">
+            <a class="download-btn" href="./cfnumberfont.ttf" download="cfnumberfont.ttf">⬇️ 下载 cfnumberfont.ttf</a>
+        </div>
+
+        <!-- ========== 英文字体（后续上传 cfenglishfont.ttf 自动生效） ========== -->
+        <div class="font-card">
+            <div class="font-name">cfenglishfont（英文字体，待上传）</div>
+            <div class="preview-text" style="font-family:'cfenglishfont'">Hello World ABCxyz</div>
+            <input class="sample-input" style="font-family:'cfenglishfont'" placeholder="上传 cfenglishfont.ttf 后即可预览英文">
+            <a class="download-btn" href="./cfenglishfont.ttf" download="cfenglishfont.ttf">⬇️ 下载 cfenglishfont.ttf</a>
+        </div>
+
+        <footer>
+            Made with FontForge｜以后新增字体直接上传ttf到仓库根目录即可
+        </footer>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: "cfchinesefont";
+            src: url("./cfchinesefont.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "cfnumberfont";
+            src: url("./cfnumberfont.ttf") format("truetype");
+        }
+        @font-face {
+            font-family: "cfenglishfont";
+            src: url("./cfenglishfont.ttf") format("truetype");
+        }
+    </style>
+</body>
+</html>
